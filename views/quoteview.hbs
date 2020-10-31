@@ -1,10 +1,14 @@
 
-
+<!-- top quote -->
     <div class="bgtop">
-        <button class="homebtn", type="button"><a href="/">Mōrena</a></button>
+        <!-- nav bar for buttons -->
 
-        <button class="addbtn" type="button">Add a new quote</button>
+        
+    <nav class="navbar" role="navigation">
+        <button class="homebtn", type="button"><a href="/"><span class="glyphicon glyphicon-home"></span></a></button>
 
+        <button class="addbtn" type="button"><span class="glyphicon glyphicon-plus"></span></button>
+    </nav>
         <div class="maoritext">
             <p class="maoriquote" id="text">
                 {{maoriQuote}}
@@ -12,10 +16,14 @@
                 <br>
                 <cite> {{author}} </cite>
             </p>
-        <a href="/quote/{{prevId}}" class="previous">&#171;</a>
-        <a href="/quote/{{nextId}}" class="next">&#187;</a>
+        <span class="arrows">
+            <a href="/quote/{{prevId}}" class="previous">&#171;</a>
+            <a href="/quote/{{nextId}}" class="next">&#187;</a>
+        </span>
         </div>
     </div>
+
+    <!-- bottom quote -->
     <div class="bgbottomquote">
         <div class="englishtext">
             <p class="englishquote">
