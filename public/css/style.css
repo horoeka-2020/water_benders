@@ -3,11 +3,7 @@ html {
   width: 100%;
 }
 body {
-  /*background: linear-gradient(90deg, rgb(148, 1, 1) 50%, white 50%); */
   font-family: "Merriweather", serif;
-  /* border-style: solid;
-  /* border-radius: 10rem; */
-  /* border-width: 30px; */
   height: 100%;
   margin: 0;
 }
@@ -27,11 +23,6 @@ body {
   text-align: center;
   border-bottom: 20px solid black;
 }
-
-/*
-.container {
-  height: 100%;
-} */
 
 .container {
   display: flex;
@@ -63,6 +54,242 @@ body {
   animation-direction: alternate;
 }
 
+/* screen size minimum 320px */
+@media (min-width:320px){
+
+  .maoriquote {
+    text-align: left;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+  }
+
+  .arrows{
+    position: absolute;
+    top: 94%;
+    left: 12.5%;
+    height: 70px;
+    width: 75%;
+  }
+  .previous{
+    text-decoration: none;
+    color: black;
+    font-size: 65px;
+    float: left;
+    margin-left: 20px;
+  }
+  .previous a:hover{
+    text-decoration: none;
+  }
+  
+  .next{
+    text-decoration: none;
+    color: black;
+    font-size: 65px;
+    float: right;
+    margin-right: 20px;
+  }
+  .next a:hover{
+    color: black;
+    text-decoration: none;
+  }
+
+  .englishquote {
+    text-align: left;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+  }
+
+
+  .quote{
+    color:  rgb(128, 0, 0);
+    position: relative;
+    right: 40%;
+  }
+  
+  .inputquote{
+    height: 75px;
+    float: center;
+    width: 170%;
+    position: relative;
+    right: 40%;
+  }
+
+  .translator{
+    background-color: lightgrey;
+    position: absolute;
+    top: 97%;
+    left: 12.5%;
+    height: 50px;
+    width: 75%;
+  }
+
+  .labelQuote{
+    color: white;
+  }
+  .inputquoteEnglish{
+    height: 75px;
+    float: center;
+    width: 100%;
+  }
+  .inputauthor{
+    height: 50px;
+    float: center;
+  }
+  .buttonenglish{
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: grey;
+    outline: none;
+    z-index: 10;
+  }
+}
+/* screen size minimum 768px */
+@media (min-width:768px){
+
+  .maoriquote {
+    font-size: 35px;
+  }
+  .arrows{
+    top: 93%;
+  }
+  .previous{
+    font-size: 85px;
+  }
+  
+  .next{
+    font-size: 85px;
+  }
+
+  .englishquote {
+    font-size: 35px;
+  }
+
+  .quote{
+    right: 180px;
+    font-size: 30px;
+  }
+  
+  .inputquote{
+    height: 85px;
+    position: relative;
+    right: 100%;
+    width: 250%;
+  }
+
+  .translator{
+    top: 97%;
+    left: 15%;
+    width: 60%;
+  }
+
+  .labelQuote{
+    position: relative;
+    top: -80px;
+    left: -80px;
+    font-size: 30px;
+  }
+  .inputquoteEnglish{
+    height: 85px;
+    width: 120%;
+    position: relative;
+    left: -20%;
+    top: -80px;
+  }
+
+  .inputauthor{
+    position: relative;
+    left: -20%;
+    width: 70%;
+    top: -80px;
+  }
+  .buttonenglish{
+    font-size: 23px;
+  }
+}
+
+/* screen size minimum 1200px */
+@media (min-width:1200px){
+
+  .maoriquote {
+    font-size: 40px;
+  }
+  .arrows{
+    top: 91%;
+  }
+  .previous{
+    font-size: 110px;
+  }
+  
+  .next{
+    font-size: 110px;
+  }
+
+  .englishquote {
+    font-size: 40px;
+  }
+
+  .quote{
+    right: 300px;
+    font-size: 45px;
+  }
+  
+  .inputquote{
+    height: 100px;
+    position: relative;
+    right: 150%;
+    width: 350%;
+  }
+
+  .translator{
+    top: 95%;
+    left: 20%;
+    width: 50%;
+    height: 10%;
+    font-size: 20px;
+  }
+
+  .labelQuote{
+    position: relative;
+    top: -60px;
+    left: -150px;
+    font-size: 45px;
+  }
+  .inputquoteEnglish{
+    height: 100px;
+    width: 140%;
+    left: -30%;
+    top: -60px;
+  }
+  .inputauthor{
+    left: -30%;
+    width: 85%;
+    top: -50px;
+  }
+  .buttonenglish{
+    height: 75px;
+    width: 130px;
+    padding: 10px 30px;
+    font-size: 35px;
+    position: relative;
+    left: 450px;
+  }
+}
+
 .bgbottomquote {
   bottom: 0;
   left: 0;
@@ -73,25 +300,12 @@ body {
   background-color: rgb(128, 0, 0);
 }
 
-
-.maoriquote {
-  text-align: left;
-  margin: 0;
+.addquote{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  height: 50%;
 }
 
-.englishquote {
-  text-align: left;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
 
 #text {
   color: rgb(129, 0, 0);
@@ -107,8 +321,15 @@ body {
   margin: 4px 2px;
   cursor: pointer;
   background: rgba(119, 119, 119, 0.1);
-  outline: none
+  outline: none;
 }
+
+.button a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+
 
 a {
   text-decoration: none;
@@ -142,61 +363,6 @@ a {
 }
 
 
-/* .addbtn {
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  outline: none;
-  font-family: "Merriweather", serif;
-  position: absolute;
-  left: 45%;
-} */
 
-/* .addbtn {
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-  font-family: "Merriweather", serif;
-  display: flex;
-  align-items: center;
-  float: center;
-  position: relative;
-  top: -25px;
-  left: 25%;
-} */
 
-.arrows{
 
-  position: absolute;
-  top: 90%;
-  left: 12.5%;
-  height: 70px;
-  width: 75%;
-}
-.previous{
-  text-decoration: none;
-  color: black;
-  font-size: 65px;
-  float: left;
-  margin-left: 20px;
-  /* margin-top: 220px; */
-}
-
-.next{
-  text-decoration: none;
-  color: black;
-  font-size: 65px;
-  float: right;
-  margin-right: 20px;
-  /* margin-top: 220px; */
-}

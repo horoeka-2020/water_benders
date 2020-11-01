@@ -7,8 +7,12 @@
     <nav class="navbar" role="navigation">
         <button class="homebtn", type="button"><a href="/"><span class="glyphicon glyphicon-home"></span></a></button>
 
-        <button class="addbtn" type="button"><span class="glyphicon glyphicon-plus"></span></button>
+        <button class="addbtn" type="button"><a href="/add"><span class="glyphicon glyphicon-plus"></span></a></button>
     </nav>
+
+
+    <!-- upper quote in maori -->
+
         <div class="maoritext">
             <p class="maoriquote" id="text">
                 {{maoriQuote}}
@@ -16,6 +20,8 @@
                 <br>
                 <cite> {{author}} </cite>
             </p>
+
+    <!-- arrows to go to next or previous quote -->
         <span class="arrows">
             <a href="/quote/{{prevId}}" class="previous">&#171;</a>
             <a href="/quote/{{nextId}}" class="next">&#187;</a>
@@ -23,11 +29,13 @@
         </div>
     </div>
 
-    <!-- bottom quote -->
+    <!-- bottom quote in english -->
+
     <div class="bgbottomquote">
         <div class="englishtext">
             <p class="englishquote">
                 {{engQuote}}
+                <br>
                 <br>
                 <cite> {{author}} </cite>
             </p>

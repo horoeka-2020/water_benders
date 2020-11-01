@@ -37,3 +37,9 @@ router.get('/quote/:id', (req, res) => {
       res.status(500).send('DATABASE ERROR ' + err.message)
     })
 })
+
+// Render for add quote form
+
+router.get('/add', (req, res) => {
+  res.render('add')
+})
